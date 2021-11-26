@@ -1,29 +1,39 @@
+@import "/src/Styles/Variable.scss";
 .Header {
   margin-bottom: 10px;
+  padding: 4px 0;
   &.bg-light {
-    background-color: #4267b2 !important;
+    background-color: $base-color !important;
   }
   &.navbar-light {
-    .navbar-brand {
+    .container{
+      display: flex;
+      align-items: center;
+      .navbar-brand {
       color: #fff !important;
+      font-size: 0.98em;
       padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       img {
-        height: 1.5em;
-        position: relative;
-        top: -2px;
+        height: 1.4rem;
+        line-height: 1;
+        border: 1px solid rgba(#333, 0.25);
+        border-radius: 5px;
       }
     }
     .UserMeta {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       img {
-        height: 1.7em;
-        width: 1.7em;
+        height: 1.5rem;
+        line-height: 1;
         object-fit: cover;
         border-radius: 50%;
         border: 1px solid rgba(#000, 0.2);
-        line-height: 1;
         margin-right: 8px;
-        position: relative;
-        top: -2px;
       }
       a {
         text-decoration: none;
@@ -32,12 +42,16 @@
       }
       .nav-links {
         margin-left: 10px;
-        a{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        a {
           border-left: 1px solid rgba(#ccc, 0.25);
           margin-left: 10px;
           padding-left: 10px;
         }
       }
+    }
     }
   }
 }
