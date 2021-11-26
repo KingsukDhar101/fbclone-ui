@@ -18,7 +18,7 @@
       p {
         font-size: 0.9em;
         + p {
-          font-size: 0.6em;
+          font-size: 0.61em;
         }
         a {
           text-decoration: none;
@@ -27,11 +27,14 @@
       }
     }
   }
+
   .FBBox {
-    p.post-heading {
-      padding: 5px;
+    p#post-heading {
+      padding: 3px 2px;
       margin: 0;
+      font-size: 0.9em;
     }
+
     img {
       width: 100%;
     }

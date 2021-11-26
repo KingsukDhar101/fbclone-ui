@@ -9,7 +9,7 @@ const Main = ({ WallData }) => {
       {WallData.map((item, key) => (
         <FBBox key={key}>
           <PostUserMeta {...item.UserMeta} />
-          <p clssName="post-heading">{item.Text}</p>
+          <p id="post-heading">{item.Text}</p>
           <PostAttachment item={item} />
           <PostAction />
         </FBBox>
