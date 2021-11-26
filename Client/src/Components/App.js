@@ -1,10 +1,10 @@
 import { Component } from "react";
 import { GetUserData } from "../Services/UserData";
 import { GetWallData } from "../Services/UserData";
-import Header from "./Bootstrap/Header";
-import Sidebar from "./Sidebar";
-import Main from "./Main";
-import Feed from "./Feed";
+import Header from "./Header/Header";
+import Sidebar from './Sidebar/Sidebar'
+import Main from "./Main/Main";
+import Feed from "./Feed/Feed";
 
 export default class App extends Component {
   state = {
