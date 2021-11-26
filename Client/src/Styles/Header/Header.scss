@@ -1,0 +1,69 @@
+@import "/src/Styles/Variable.scss";
+.Header {
+  margin-bottom: 10px;
+  padding: 4px 0;
+  &.bg-light {
+    background-color: $base-color !important;
+  }
+  &.navbar-light {
+    .container {
+      display: flex;
+      align-items: center;
+      padding: 3px 12px; 
+      .navbar-brand {
+        color: #fff !important;
+        font-size: 0.98em;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        img {
+          height: 1.4rem;
+          line-height: 1;
+          border: 1px solid rgba(#333, 0.25);
+          border-radius: 5px;
+        }
+      }
+      .UserMeta {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.9em;
+        .UserMeta-Container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          img {
+            height: 1.5rem;
+            line-height: 1;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 1px solid rgba(#000, 0.2);
+            margin-right: 8px;
+          }
+          p {
+            margin: 0;
+            padding: 0;
+            color: #f0f0f0;
+          }
+        }
+        .nav-links {
+          margin-left: 10px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+
+          a {
+            text-decoration: none;
+            margin: 0px 15px;
+            padding: 0;
+            color: #f0f0f0;
+          }
+        }
+      }
+    }
+  }
+}

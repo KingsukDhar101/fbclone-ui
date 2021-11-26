@@ -8,13 +8,15 @@ const PostAttachment = ({ item }) => {
           </div>
         )}
         {item.Type === "Video" && (
-          <div class="embed-container">
-            <iframe
-              src="https://www.youtube.com/embed/MxY-D0Yu8CY"
-              title={item.Text}
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
+          <div className="Embed-post">
+            <div class="embed-container">
+              <iframe
+                src="https://www.youtube.com/embed/MxY-D0Yu8CY"
+                title={item.Text}
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         )}
       </>

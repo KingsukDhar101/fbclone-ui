@@ -4,9 +4,9 @@ import React from 'react'
 const HeaderUserMeta = ({Fullname, Avatar, ProfileURL}) => {
   return (
     <div className="UserMeta">
-      <a href={ProfileURL}>
+      <a href={ProfileURL} className="UserMeta-Container">
         <img src={Avatar} alt={Fullname} />
-        {Fullname}
+        <p>{Fullname}</p>
       </a>
       <span className="nav-links">
         <a href="/">Home</a>
