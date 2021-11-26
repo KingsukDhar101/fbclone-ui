@@ -1,0 +1,106 @@
+{
+  "UserMeta": {
+    "Fullname": "Mark Zuckerberg",
+    "Avatar": "/Images/mark.jpg",
+    "ProfileURL": "/"
+  },
+  "Birthdays": [
+    {
+      "Fullname": "Kingsuk Dhar",
+      "ProfileURL": "/"
+    },
+    {
+      "Fullname": "Kuheli Dhar",
+      "ProfileURL": "/"
+    },
+    {
+      "Fullname": "Subrata Saha",
+      "ProfileURL": "/"
+    }
+  ],
+  "Pages": [
+    {
+      "Avatar": "/Icons/Edusera.png",
+      "PageURL": "/",
+      "Name": "Edusera",
+      "MessageCount": "20",
+      "NotificationCount": "20"
+    },
+    {
+      "Avatar": "/Images/mark.jpg",
+      "PageURL": "/",
+      "Name": "Mark",
+      "MessageCount": "15",
+      "NotificationCount": "15"
+    }
+  ],
+  "NewsFeed": [
+    {
+      "Image": "https://i.imgur.com/9ByWhPx.png",
+      "NewsLink": "/",
+      "Title": "Mars",
+      "Text": "Mars",
+      "DatePosted": "25th Thursday November 2021"
+    },
+    {
+      "Image": "https://i.imgur.com/gFfZsSQ.jpg",
+      "NewsLink": "/",
+      "Title": "Nature",
+      "Text": "Nature",
+      "DatePosted": "25th Thursday November 2021"
+    },
+    {
+      "Image": "https://i.imgur.com/tSWOWIc.jpg",
+      "Title": "Rafale aircraft",
+      "Text": "Rafale aircraft"
+    },
+    {
+      "Image": "https://i.imgur.com/4XmNCRh.jpg",
+      "Title": "Black hole",
+      "Text": "Black hole"
+    }
+  ],
+  "ContentList": {
+    "Default": [
+      {
+        "ID": "News",
+        "Link": "/",
+        "Icon": "/Icons/News-Feed.png",
+        "Text": "News Feed"
+      },
+      {
+        "ID": "Messenger",
+        "Link": "/",
+        "Icon": "/Icons/Messenger.png",
+        "Text": "Messenger"
+      },
+      {
+        "ID": "Watch",
+        "Link": "/",
+        "Icon": "/Icons/Watch-Video.png",
+        "Text": "Watch"
+      },
+      {
+        "ID": "Marketplace",
+        "Link": "/",
+        "Icon": "/Icons/Marketplace.png",
+        "Text": "Marketplace"
+      }
+    ],
+    "Shortcuts": [],
+    "Explore": [
+      {
+        "ID": "Events",
+        "Link": "/",
+        "Icon": "/Icons/Events.png",
+        "Text": "Events"
+      },
+      {
+        "ID": "Groups",
+        "Link": "/",
+        "Icon": "/Icons/Groups.png",
+        "Text": "Groups"
+      }
+    ]
+  }
+}
