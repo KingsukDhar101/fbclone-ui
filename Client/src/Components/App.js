@@ -2,20 +2,30 @@ import { Component } from "react";
 import { GetUserData } from "../Services/UserData";
 import { GetWallData } from "../Services/UserData";
 import Header from "./Header/Header";
-import Sidebar from './Sidebar/Sidebar'
+import Sidebar from "./Sidebar/Sidebar";
 import Main from "./Main/Main";
 import Feed from "./Feed/Feed";
+import Loading from "./Loading";
+import Login from "./Login";
 
 export default class App extends Component {
   state = {
     UserData: null,
     WallData: [],
+    Loading: true,
   };
   componentDidMount() {
-    GetUserData().then(({ data }) => this.setState({ UserData: data }));
-    GetWallData().then(({ data }) => this.setState({ WallData: data }));
+    GetUserData().then(({ data }) => {
+      this.setState({ UserData: data });
+      GetWallData().then(({ data }) => {
+        this.setState({ WallData: data, Loading: false });
+      });
+    });
   }
   render() {
+    console.log(
+      "This is cloned version of facebook (only for educational purpose)"
+    );
     return (
       <div className="App">
         <Header
@@ -25,7 +35,10 @@ export default class App extends Component {
         >
           Facebook Clone
         </Header>
-        {this.state.UserData ? (
+        {this.state.Loading ? (
+          <Loading />
+        ) : /* <h2>"Loading please wait..."</h2> */
+        this.state.UserData ? (
           <div className="container">
             <div className="row">
               <Sidebar
@@ -41,7 +54,8 @@ export default class App extends Component {
             </div>
           </div>
         ) : (
-          "Login page"
+          /* {"Login page" */
+          <Login />
         )}
       </div>
     );
