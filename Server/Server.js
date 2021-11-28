@@ -15,6 +15,7 @@ app.use((req, res, next)=>{
 
 // Middleware to parse POST Data
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 
 app.use("/", root);
